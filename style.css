@@ -99,6 +99,7 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  overflow-x: hidden;
 }
 
 .main-content-left {
