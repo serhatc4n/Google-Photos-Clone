@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(128, 128, 128, 0.432);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.432);
+  height: 6.5rem;
+}
+
+.navbar-left {
+  display: flex;
+  padding: 15px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.navbar-left > img {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.navbar-left > span {
+  font-size: 24px;
+  color:#757575;
+  cursor: pointer;
+}
+
+.navbar-left .navbar-left-photo {
+  color:#BABABA;
+  font-size: 2.2rem;
+}
+
+.navbar-left-photo:hover {
+  cursor: pointer;
+  
+}
+
+.navbar-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-right-1 {
+  margin-right: 3rem;
+  color:rgb(28, 116, 233);
+  font-size: 1.73rem;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: white;
+  font-weight: 500;
+  transition: 0.3s;
+  
+}
+
+.navbar-right-1:hover {
+  background-color: rgba(28, 117, 233, 0.082);
+}
+
+.navbar-right-2 {
+  margin-right: 4rem;
+  background-color: #2e78e7;
+  color:white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.navbar-right-2:hover {
+  background-color: #125fd1;
+}
+
+.section-container {
+  height: 90vh;
+  width: 99vw;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.main-content-left {
+  width: 480px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+} 
+
+.main-content-mid {
+  width: 480px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  transition: 0.3s;
+}
+
+
+.main-content-right {
+  width: 480px;
+  height: 10 0%;
+} 
+
+.main-content-left-photo-1 img {
+  width: 60%;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  margin-bottom: 15rem;
+  margin-top: 2.5rem;
+  transition: 0.3s;
+}
+
+.main-content-left-photo-2 img {
+  width: 80%;
+  margin-top: 9rem;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  overflow: auto;
+  transition: 0.3s;
+}
+
+.main-content-mid-photo-1 img {
+  width: 25rem;
+  margin-top: 4rem;
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: .8s;
+}
+
+.main-content-mid-photo-2 img {
+  width: 33rem;
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  transition: .8s;
+  z-index: -1;
+}
+
+.main-content-mid:hover .toRight {
+  top: 0;
+  left: 200px;
+}
+
+.main-content-mid:hover img {
+  bottom: 0;
+  right: 200px;
+}
+
+.main-content-mid-photo-1 img:hover {
+  transform: scale(1.2);
+}
+
+.main-content-mid-photo-2 img:hover {
+  transform: scale(1.2);
+}
+
+.main-content-right-photo-1 img:hover {
+  transform: scale(1.2);
+}
+
+.main-content-right-photo-2 img:hover {
+  transform: scale(1.2);
+}
+
+.main-content-left-photo-1 img:hover {
+  transform: scale(1.2);
+}
+
+.main-content-left-photo-2 img:hover {
+  transform: scale(1.2);
+}
+
+.main-content-right-photo-1 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-content-right-photo-1 img {
+  width: 30rem;
+  margin-top: 15rem;
+  margin-right: 3rem;
+  border-radius: 1.5rem;
+  transition: 0.3s;
+}
+
+.main-content-right-photo-2 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-content-right-photo-2 img {
+  width: 45rem;
+  margin-top: 15rem;
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+  transition: 0.3s;
+}
+
+.main-content-mid-text {
+  text-align: center;
+}
+
+.main-content-mid-text h3 {
+  font-size: 6rem;
+  margin-bottom: 4rem;
+  font-weight: 500;
+  transition: 0.8s;
+}
+
+.main-content-mid-text h3:hover {
+  color:#3d405b;
+}
+
+
+.main-btn {
+  background-color: #2e78e7;
+  color:white;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 2rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.main-btn:hover {
+  background-color: #125fd1;
+}
